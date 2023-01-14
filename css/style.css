@@ -1,11 +1,362 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul,ol{
+
+ul,
+ol {
     list-style-type: none;
 }
+
+.container {
+    width: 1450px;
+    margin: 0 auto;
+}
+
+.common-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+
+}
+
+/* header css style start here */
+#header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/* header css style end here */
+/* navbar css style start here */
+#navbar {
+    line-height: 100px;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.menu ul {
+    display: flex;
+
+}
+
+.menu ul li {
+    padding-left: 80px;
+}
+
+.menu ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+    text-transform: capitalize;
+}
+
+/* navbar css style end here */
+/* banner css style start here */
+.banner-main {
+    width: 860px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-text {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.banner-titel {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+}
+
+.banner-titel span {
+    padding-left: 50px;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-top: 20px;
+    padding-bottom: 55px;
+}
+
+.banner-button {
+    width: 180px;
+    height: 64px;
+    background: #FF900E;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 25px;
+    transition: all linear .3s;
+}
+
+.banner-button:hover {
+    border: 2px solid #FF900E;
+    background: transparent;
+    color: #FF900E;
+    outline: 0;
+}
+
+.banner-img {
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+/* banner css style end here */
+/* feature css style start here */
+#feature {
+    padding-top: 85px;
+}
+
+.feature-main {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 70px;
+    align-items: center;
+}
+
+.feature-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-text {
+    width: 530px;
+}
+
+.feature-titel {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #727272;
+}
+
+.feature-black {
+    color: #131313;
+}
+
+.feature-orange {
+    color: #FF900E;
+    padding-right: 30px;
+}
+
+.feature-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-bottom: 20px;
+}
+
+/* feature css style end here */
+/* experience css style start here */
+#experience {
+    padding-top: 130px;
+}
+
+#experience .spnosor-head {
+    text-align: left;
+
+}
+
+#experience .common-title {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-left: 5px solid #FF900E;
+}
+
+.experience-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experence-items-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+    margin-top: 30px;
+}
+
+.experence-items {
+    width: 514px;
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.items-titel {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+}
+
+.items-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+.experience-img{
+    position: relative;
+}
+.experience-cart {
+    position: absolute;
+    left: -95px;
+    bottom: -70px;
+    width: 342px;
+    height: 200px;
+    padding: 45px 40px;
+    border-radius: 8px;
+    background: #FF900E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cart-deteils h3 {
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFFFF;
+}
+
+.cart-deteils p {
+    font-weight: 500;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+/* experience css style end here */
+/* fun-fact css style start here */
+
+#fun-facts {
+    padding-top: 130px;
+    padding-bottom: 180px;
+}
+
+.funfacts-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    width: 540px;
+    padding-top: 5px;
+}
+
+.fun-fact-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 100px;
+    justify-items: center;
+}
+
+.fun-fact-item {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    transition: all linear .3s;
+}
+
+.fun-fact-item:hover {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.09);
+    border: none;
+}
+
+.fun-fact-items h4 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    color: #424242;
+    transition: all linear .3s;
+}
+
+.fun-fact-item:hover .fun-fact-items h4 {
+    color: #FF900E;
+}
+
+.fun-fact-items p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+    transition: all linear .3s;
+}
+
+.fun-fact-item:hover .fun-fact-items p {
+    color: #FF900E;
+}
+
+/* fun-fact css style end here */
+/* sponsor css style start here */
+#sponsor {
+    padding-bottom: 130px;
+}
+
+.spnosor-head {
+    text-align: center;
+}
+
+#sponsor .funfacts-description {
+    width: 540px;
+    margin: 0 auto;
+}
+
+.sponsor-img {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+.sponsor-img img {
+    filter: grayscale(100%);
+}
+
+/* sponsor css style end here */
+/* footer css style end here */
+#footer {}
+
+.copyright-text {
+    padding: 40px 0;
+    background: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #424242;
+}
+
+/* footer css style end here */
