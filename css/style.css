@@ -29,6 +29,7 @@ ol {
 /* header css style start here */
 #header {
     background: rgba(255, 144, 14, 0.1);
+    width: 100%;
 }
 
 /* header css style end here */
@@ -64,6 +65,23 @@ ol {
     font-size: 18px;
     color: #424242;
     text-transform: capitalize;
+}
+
+/* menu for small device */
+label #btn,
+#cancel {
+    color: #131313;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.menu {
+    display: flex;
 }
 
 /* navbar css style end here */
@@ -121,6 +139,10 @@ ol {
 .banner-img {
     padding-top: 20px;
     padding-bottom: 45px;
+}
+
+.banner-img img {
+    width: 100%;
 }
 
 /* banner css style end here */
@@ -219,9 +241,15 @@ ol {
     line-height: 26px;
     color: #727272;
 }
-.experience-img{
+
+.experience-img {
     position: relative;
 }
+
+.experience-img img {
+    width: 100%;
+}
+
 .experience-cart {
     position: absolute;
     left: -95px;
@@ -341,9 +369,30 @@ ol {
 }
 
 /* sponsor css style end here */
-/* footer css style end here */
-#footer {}
+/* gallery css style start here */
+#gallery{
+    padding-bottom: 130px;
+}
+.gallery-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-top: 40px;
+}
+.gallery-items img{
+    height: 100%;
+}
+.gal-btn{
+    text-align: center;
+    padding-top: 60px;
 
+}
+.gal-btn
+/* gallery css style end here */
+/* footer css style start here */
+#footer{
+    padding: 40px;
+}
 .copyright-text {
     padding: 40px 0;
     background: #FFF4E7;
@@ -360,3 +409,420 @@ ol {
 }
 
 /* footer css style end here */
+
+/* media queries css start here */
+/* this is for small device */
+
+/* this is for medium device */
+/* this is for large device */
+/* media queries css end here */
+
+
+
+/* extra small */
+@media only screen and (max-width: 575.98px) {
+
+    /* navbar part media queries */
+    #navbar {
+        line-height: 30px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo a {
+        font-size: 23px;
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li {
+        padding-left: 10px;
+    }
+
+    /* banner part media queries */
+    .banner-main {
+        width: 100%;
+    }
+
+    .banner-titel {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .banner-description {
+        font-size: 15px;
+    }
+
+    /* feature part media queries */
+    .feature-main {
+        flex-direction: column-reverse;
+    }
+
+    .feature-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .funfacts-description {
+        width: 100%;
+    }
+
+    .feature-description {
+        font-size: 15px;
+    }
+
+    /* experience part media queries */
+    #experience .spnosor-head {
+        text-align: center;
+    }
+
+    .experience-main {
+        display: block;
+    }
+
+    #experience .common-title {
+        padding-left: 0;
+        padding-bottom: 15px;
+        border-left: none;
+        border-bottom: 5px solid #FF900E;
+    }
+
+    #experience .funfacts-description {
+        font-size: 15px;
+        padding-top: 15px;
+    }
+
+    .experence-items {
+        width: 100%;
+    }
+
+    .experience-cart {
+        display: none;
+    }
+
+    .experience-img {
+        display: none;
+    }
+
+    /* fun-fact part media queries */
+    .common-title {
+        text-align: center;
+    }
+
+    .funfacts-description {
+        text-align: center;
+    }
+
+    .fun-fact-main {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 50px;
+        gap: 12px;
+    }
+
+    .fun-fact-item {
+        width: 100%;
+    }
+
+    #fun-facts {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+
+    /* sponsor part media queries */
+    #sponsor {
+        padding-bottom: 90px;
+    }
+
+    #sponsor .funfacts-description {
+        width: 100%;
+    }
+
+    .sponsor-img {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 24px;
+    }
+    /* gallery part media queries */
+    .gallery-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .copyright {
+        font-size: 16px;
+    }
+}
+
+/* landscape */
+@media only screen and (min-width: 576px) and (max-width:767.98px) {
+    #navbar {
+        line-height: 30px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo a {
+        font-size: 23px;
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li {
+        padding-left: 10px;
+    }
+
+    /* banner part media queries */
+    .banner-main {
+        width: 100%;
+    }
+
+    .banner-titel {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .banner-description {
+        font-size: 15px;
+    }
+
+    /* feature part media queries */
+    .feature-main {
+        flex-direction: column-reverse;
+    }
+
+    .feature-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .funfacts-description {
+        width: 100%;
+    }
+
+    .feature-description {
+        font-size: 15px;
+    }
+
+    /* experience part media queries */
+    #experience .spnosor-head {
+        text-align: center;
+    }
+
+    .experience-main {
+        display: block;
+    }
+
+    #experience .common-title {
+        padding-left: 0;
+        padding-bottom: 15px;
+        border-left: none;
+        border-bottom: 5px solid #FF900E;
+    }
+
+    #experience .funfacts-description {
+        font-size: 15px;
+        padding-top: 15px;
+    }
+
+    .experence-items {
+        width: 100%;
+    }
+
+    .experience-cart {
+        display: none;
+    }
+
+    .experience-img {
+        display: none;
+    }
+
+    /* fun-fact part media queries */
+    .common-title {
+        text-align: center;
+    }
+
+    .funfacts-description {
+        text-align: center;
+    }
+
+    .fun-fact-main {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 50px;
+        gap: 12px;
+    }
+
+    .fun-fact-item {
+        width: 100%;
+    }
+
+    #fun-facts {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+
+    /* sponsor part media queries */
+    #sponsor {
+        padding-bottom: 90px;
+    }
+
+    #sponsor .funfacts-description {
+        width: 100%;
+    }
+
+    .sponsor-img {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 24px;
+    }
+
+    .gallery-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* medium */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .logo a {
+        font-size: 30px;
+    }
+
+    .menu ul li {
+        padding-left: 40px;
+    }
+
+    .banner-main {
+        width: 100%;
+    }
+
+    /* experience part here */
+    #experience {
+        padding-top: 80px;
+    }
+
+    .experience-main {
+        display: block;
+    }
+
+    .experience-img {
+        display: none;
+    }
+
+    #experience .spnosor-head {
+        text-align: center;
+    }
+
+    #experience .common-title {
+        border-left: none;
+        border-bottom: 5px solid #FF900E;
+    }
+
+    #experience .funfacts-description {
+        width: 100%;
+        padding-top: 35px;
+    }
+
+    .experence-items-main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .experence-items {
+        width: 100%;
+    }
+
+    /* fun-fact part media queries */
+    .common-title {
+        text-align: center;
+    }
+
+    .funfacts-description {
+        text-align: center;
+        width: 100%;
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .fun-fact-main {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 50px;
+        gap: 12px;
+    }
+
+    .fun-fact-item {
+        width: 100%;
+    }
+
+    #fun-facts {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+
+    /* sponsor part start here */
+    #sponsor {
+        padding-bottom: 90px;
+    }
+
+    #sponsor .funfacts-description {
+        width: 100%;
+    }
+
+    .sponsor-img {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 24px;
+    }
+
+}
+
+/* large */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .experience-cart {
+        left: -25px;
+        bottom: -45px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .experience-img img {
+        width: 100%;
+    }
+}
+
+/* extra large */
+@media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .experience-cart {
+        left: -18px;
+        bottom: 0px;
+        width: 300px;
+        height: 150px;
+    }
+}
